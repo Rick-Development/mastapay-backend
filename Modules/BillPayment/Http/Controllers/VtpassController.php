@@ -85,4 +85,18 @@ class VtpassController extends Controller
     {
         return response()->json($this->baseVtpassService->balance());
     }
+
+
+    // VERIFY METER NUMBER
+    public function verifyMeter(Request $request)
+    {
+        // $request->validate([
+        //     'billersCode' => 'required',
+        //     'serviceID'   => 'required',
+        //     'type'        => 'required|in:prepaid,postpaid',
+        // ]);
+
+        $response = $this->baseVtpassService->verifyMeterNumber($request->all());
+        return response()->json($response);
+    }
 }

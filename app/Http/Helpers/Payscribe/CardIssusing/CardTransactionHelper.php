@@ -13,9 +13,13 @@ class CardTransactionHelper extends ConnectionHelper {
         $this->currentDate = date('Y-m-d'); // Current date
     }
 
-    public function cardTransaction($transId, $startDate, $endDate, $page){
-        $url = "/cards/transaction/$transId/transactions?start_date=$startDate&end_date=$endDate&page_size=20&page=$page";
-        
+    public function cardTransaction($cardId, $startDate, $endDate = null, $page){
+
+        // if($endDate == null){
+        //     $endDate  = $this->currentDate;
+        // }
+        $url = "/cards/transaction/$cardId/transactions?start_date=$startDate&end_date=$endDate&page_size=20&page=$page";
+        // \Log::info($url);
         return $this->get($url);
 
     }

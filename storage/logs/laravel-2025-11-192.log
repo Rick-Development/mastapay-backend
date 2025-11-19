@@ -1,0 +1,251 @@
+[2025-11-19 13:19:17] local.INFO: array (
+  'serviceID' => 'mtn',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'request_id' => '202511191319691db5c592bc9',
+)  
+[2025-11-19 13:19:57] local.INFO: array (
+  'serviceID' => 'airtel',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'request_id' => '202511191319691db5ed501bb',
+)  
+[2025-11-19 13:20:25] local.INFO: array (
+  'serviceID' => 'glo',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'request_id' => '202511191320691db6096f1d6',
+)  
+[2025-11-19 13:21:16] local.INFO: array (
+  'serviceID' => '9mobile',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'request_id' => '202511191321691db63c8fe16',
+)  
+[2025-11-19 13:21:48] local.INFO: array (
+  'serviceID' => 'etisalat',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'request_id' => '202511191321691db65c1b1fe',
+)  
+[2025-11-19 13:24:02] local.INFO: {"response_description":"000","content":[{"identifier":"airtime","name":"Airtime Recharge"},{"identifier":"data","name":"Data Services"},{"identifier":"tv-subscription","name":"TV Subscription"},{"identifier":"electricity-bill","name":"Electricity Bill"},{"identifier":"education","name":"Education"},{"identifier":"other-services","name":"Other Merchants\/Services"},{"identifier":"insurance","name":"Insurance"}]}  
+[2025-11-19 13:24:21] local.INFO: {"response_description":"000","content":[{"serviceID":"airtel","name":"Airtel Airtime VTU","minimium_amount":"50","maximum_amount":"50000","convinience_fee":"0 %","product_type":"flexible","image":"https:\/\/sandbox.vtpass.com\/resources\/products\/200X200\/Airtel-Airtime-VTU.jpg"},{"serviceID":"mtn","name":"MTN Airtime VTU","minimium_amount":"5","maximum_amount":"200000","convinience_fee":"0 %","product_type":"flexible","image":"https:\/\/sandbox.vtpass.com\/resources\/products\/200X200\/MTN-Airtime-VTU.jpg"},{"serviceID":"glo","name":"GLO Airtime VTU","minimium_amount":"10","maximum_amount":"100000","convinience_fee":"0 %","product_type":"flexible","image":"https:\/\/sandbox.vtpass.com\/resources\/products\/200X200\/GLO-Airtime.jpg"},{"serviceID":"etisalat","name":"9mobile Airtime VTU","minimium_amount":"5","maximum_amount":"50000","convinience_fee":"0 %","product_type":"flexible","image":"https:\/\/sandbox.vtpass.com\/resources\/products\/200X200\/9mobile-Airtime.jpg"},{"serviceID":"foreign-airtime","name":"International Airtime","minimium_amount":"1","maximum_amount":"200000","convinience_fee":"0 %","product_type":"flexible","image":"https:\/\/sandbox.vtpass.com\/resources\/products\/200X200\/Foreign-Airtime.jpg"}]}  
+[2025-11-19 13:24:41] local.INFO: array (
+  'serviceID' => 'foreign-airtime',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'request_id' => '202511191324691db7095b5d6',
+)  
+[2025-11-19 13:26:40] local.INFO: array (
+  'serviceID' => 'foreign-airtime',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'variation_code' => '4987',
+  'request_id' => '202511191326691db78074437',
+)  
+[2025-11-19 13:27:31] local.INFO: array (
+  'serviceID' => 'mtn-data',
+  'phone' => '08011111111',
+  'amount' => '100',
+  'variation_code' => 'mtn-10mb-100',
+  'request_id' => '202511191327691db7b303cec',
+)  
+[2025-11-19 13:29:16] local.INFO: array (
+  'serviceID' => 'airtel-data',
+  'phone' => '08011111111',
+  'amount' => '200',
+  'variation_code' => 'airt-200',
+  'request_id' => '202511191329691db81c8977d',
+)  
+[2025-11-19 13:30:41] local.INFO: array (
+  'serviceID' => 'glo-data',
+  'phone' => '08011111111',
+  'amount' => '200',
+  'variation_code' => 'glo200',
+  'request_id' => '202511191330691db871831c3',
+)  
+[2025-11-19 13:31:38] local.INFO: array (
+  'serviceID' => 'etisalat-data',
+  'phone' => '08011111111',
+  'amount' => '200',
+  'variation_code' => 'eti-200',
+  'request_id' => '202511191331691db8aa5b817',
+)  
+[2025-11-19 13:32:28] local.INFO: array (
+  'serviceID' => 'waec',
+  'phone' => '0903920211',
+  'amount' => '900.00',
+  'quantity' => '5',
+  'variation_code' => 'waecdirect',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191332691db8dc7780c',
+)  
+[2025-11-19 13:33:34] local.INFO: array (
+  'serviceID' => 'ikeja-electric',
+  'phone' => '0903920211',
+  'amount' => '2000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191333691db91ed9b37',
+)  
+[2025-11-19 13:46:45] local.INFO: array (
+  'serviceID' => 'aba-electric',
+  'phone' => '0903920211',
+  'amount' => '2000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191346691dbc353c794',
+)  
+[2025-11-19 13:47:35] local.INFO: array (
+  'serviceID' => 'abuja-electric',
+  'phone' => '0903920211',
+  'amount' => '1000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191347691dbc677b180',
+)  
+[2025-11-19 13:48:20] local.INFO: array (
+  'serviceID' => 'benin-electric',
+  'phone' => '0903920211',
+  'amount' => '1000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191348691dbc9474bd2',
+)  
+[2025-11-19 14:00:48] local.INFO: array (
+  'serviceID' => 'eko-electric',
+  'phone' => '0903920211',
+  'amount' => '1000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191400691dbf80bc821',
+)  
+[2025-11-19 14:01:30] local.INFO: array (
+  'serviceID' => 'enugu-electric',
+  'phone' => '0903920211',
+  'amount' => '1000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191401691dbfaa695a5',
+)  
+
+[2025-11-19 14:09:49] local.INFO: array (
+  'serviceID' => 'ibadan-electric',
+  'phone' => '0903920211',
+  'amount' => '3000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191409691dc19dbed63',
+)  
+[2025-11-19 14:13:43] local.INFO: array (
+  'serviceID' => 'jos-electric',
+  'phone' => '0903920211',
+  'amount' => '3000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191413691dc28735eb5',
+)  
+[2025-11-19 14:16:31] local.INFO: array (
+  'serviceID' => 'kaduna-electric',
+  'phone' => '0903920211',
+  'amount' => '3000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191416691dc32fd2a3c',
+)  
+[2025-11-19 14:17:16] local.INFO: array (
+  'serviceID' => 'kano-electric',
+  'phone' => '0903920211',
+  'amount' => '3000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191417691dc35ce56bd',
+)  
+[2025-11-19 14:18:19] local.INFO: array (
+  'serviceID' => 'porthacourt-electric',
+  'phone' => '0903920211',
+  'amount' => '3000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191418691dc39be9112',
+)  
+[2025-11-19 14:18:49] local.INFO: array (
+  'serviceID' => 'portharcourt-electric',
+  'phone' => '0903920211',
+  'amount' => '3000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191418691dc3b9f2cc2',
+)  
+[2025-11-19 14:19:24] local.INFO: array (
+  'serviceID' => 'yola-electric',
+  'phone' => '0903920211',
+  'amount' => '3000.00',
+  'variation_code' => 'prepaid',
+  'billersCode' => '1111111111111',
+  'request_id' => '202511191419691dc3dc142a0',
+)  
+[2025-11-19 14:20:19] local.INFO: array (
+  'billersCode' => '1010101010101',
+  'serviceID' => 'aba-electric',
+  'type' => 'postpaid',
+  'request_id' => '202511191420691dc41318169',
+)  
+[2025-11-19 14:23:10] local.INFO: array (
+  'serviceID' => 'dstv',
+  'phone' => '{{RANDOM_PHONE}}',
+  'amount' => '1850.00',
+  'variation_code' => 'dstv-padi',
+  'billersCode' => '1212121212',
+  'request_id' => '202511191423691dc4be87b0a',
+)  
+[2025-11-19 14:23:30] local.INFO: array (
+  'serviceID' => 'gotv',
+  'phone' => '{{RANDOM_PHONE}}',
+  'amount' => '1850.00',
+  'variation_code' => 'gotv-lite',
+  'billersCode' => '1212121212',
+  'request_id' => '202511191423691dc4d2ef861',
+)  
+[2025-11-19 14:25:28] local.INFO: array (
+  'serviceID' => 'showmax',
+  'phone' => '{{RANDOM_PHONE}}',
+  'amount' => '1850.00',
+  'variation_code' => 'full_3',
+  'billersCode' => '1212121212',
+  'request_id' => '202511191425691dc548d9142',
+)  
+[2025-11-19 14:26:27] local.INFO: array (
+  'serviceID' => 'startimes',
+  'phone' => '{{RANDOM_PHONE}}',
+  'amount' => '1850.00',
+  'variation_code' => 'nova',
+  'billersCode' => '1212121212',
+  'request_id' => '202511191426691dc58397727',
+)  
+[2025-11-19 14:29:58] local.INFO: array (
+  'billersCode' => '1111111111111',
+  'serviceID' => 'electric',
+  'type' => 'prepaid',
+  'request_id' => '202511191429691dc65686514',
+)  
+[2025-11-19 14:30:07] local.INFO: array (
+  'billersCode' => '1111111111111',
+  'serviceID' => 'electricity-bill',
+  'type' => 'prepaid',
+  'request_id' => '202511191430691dc65f7e9f1',
+)  
+[2025-11-19 14:30:22] local.INFO: array (
+  'billersCode' => '1212121212',
+  'serviceID' => 'dstv',
+  'request_id' => '202511191430691dc66e80751',
+)  
+[2025-11-19 16:35:53] local.INFO: array (
+  'serviceID' => 'startimes',
+  'phone' => '{{RANDOM_PHONE}}',
+  'amount' => '1850.00',
+  'variation_code' => 'nova',
+  'billersCode' => '1212121212',
+  'request_id' => '202511191635691de3d94b237',
+)  
+

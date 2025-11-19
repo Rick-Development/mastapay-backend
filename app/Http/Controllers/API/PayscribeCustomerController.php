@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\JsonResponse;
+use Faker\Factory as Faker;
 use Illuminate\Support\Facades\Storage;
 
 class PayscribeCustomerController extends Controller
@@ -48,38 +49,30 @@ class PayscribeCustomerController extends Controller
     }
 
 
- public function  upgradeToTierOne(Request $request): JsonResponse
+ public function  upgradeToTierOne(Request $request)
     {
+       
+    
         $request->validate([
-            'customer_id' => 'required | string',
-            'dob' => 'required | string',
-            'street' => 'required | string',
-            'city' => 'required | string',
-            'state' => 'required | string',
-            'country' => 'required | string',
-            'postal_code' => 'required | string',
             'identification_type' => 'required | string',
             'identification_number' => 'required | string',
-            // 'photo' => 'sometimes | image'
         ]);
-        // $serverUrl = config('app.url');
-        // $image = $request->file('photo');
-        // // Storage::disk('public')->put('giftcards', $image);
-        // $uploadedImg = $image->store('customerImg', 'public');
-        // $imgUrl = asset($uploadedImg);
-        // $fullUrl = $serverUrl . $imgUrl;
+
+        $user = auth()->user();
+         $faker = Faker::create();
+
         
         $imagePath = asset('storage/app/public/uploads/AdihROvTAnyM1PFKWLLC0Gaqm3cRoW6YatXS9NG0.png');
 
-        $data = [
-            'customer_id' => $request->customer_id,
-            'dob' => $request->dob,
+    $data = [
+            'customer_id' =>  '6a1bef8d-87f6-4742-8a3b-0a276544dbc6',// $user -> payscribe_id,
+            'dob'         => $faker->date('Y-m-d'),
             'address' => [
-                'street' => $request->street,
-                'city' => $request->city,
-                'state' => $request->state,
-                'country' => $request->country,
-                'postal_code' => $request->postal_code,
+                'street'      => $faker->streetAddress,
+                'city'        => $faker->city,
+                'state'       => $faker->state,
+                'country'     => $faker->country,
+                'postal_code' => $faker->postcode,
             ],
             'identification_type' => $request->identification_type,
             'identification_number' => $request->identification_number,
@@ -100,10 +93,10 @@ class PayscribeCustomerController extends Controller
         $serverUrl = config('app.url');
 
         $request->validate([
-            'customer_id' => 'required | string',
+            // 'customer_id' => 'required | string',
             'type' => 'required | string',
             'number' => 'required | string',
-            'country' => 'required | string',
+            // 'country' => 'required | string',
             // 'image' => 'required | image'
         ]);
 
@@ -116,11 +109,11 @@ class PayscribeCustomerController extends Controller
         $imagePath = asset('storage/app/public/uploads/AdihROvTAnyM1PFKWLLC0Gaqm3cRoW6YatXS9NG0.png');
 
         $data = [
-            'customer_id' => $request->customer_id,
+            'customer_id' => '6a1bef8d-87f6-4742-8a3b-0a276544dbc6',// $user -> payscribe_id,
             'identity' => [
                 'type' => $request->type,
                 'number' => $request->number,
-                'country' => $request->country,
+                'country' => "NG",
                 'image' => $imagePath,
             ],
         ];

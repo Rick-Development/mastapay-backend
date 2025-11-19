@@ -1,72 +1,197 @@
-[2025-11-19 01:26:31] local.ERROR: syntax error, unexpected token "public" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"public\" at /Users/macintoshhd/Downloads/masterpay/Modules/BillPayment/Http/Controllers/VtpassController.php:63)
-[stacktrace]
-#0 /Users/macintoshhd/Downloads/masterpay/vendor/composer/ClassLoader.php(427): {closure:Composer\\Autoload\\ClassLoader::initializeIncludeClosure():575}('/Users/macintos...')
-#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Modules\\\\BillPay...')
-#2 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1117): is_a('Modules\\\\BillPay...', 'Illuminate\\\\Rout...', true)
-#3 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1054): Illuminate\\Routing\\Route->controllerMiddleware()
-#4 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(820): Illuminate\\Routing\\Route->gatherMiddleware()
-#5 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(802): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
-#6 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#7 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#8 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#9 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#10 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->{closure:Illuminate\\Foundation\\Http\\Kernel::dispatchToRouter():198}(Object(Illuminate\\Http\\Request))
-#11 /Users/macintoshhd/Downloads/masterpay/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
-#12 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#14 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#16 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#17 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#18 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#19 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#20 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#21 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#22 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#23 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#24 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#25 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#26 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#27 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#28 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#29 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#30 /Users/macintoshhd/Downloads/masterpay/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#31 {main}
+[2025-11-19 16:48:18] local.INFO: {"url":"https:\/\/api.payscribe.ng\/api\/v1\/cards\/create","data":{"brand":"VISA","amount":"1","customer_id":"f385bbcd-0688-4e28-84b7-a4ee965070db","ref":"e1b3fc00-9d69-404f-a5fd-8a659a4d3762","type":"virtual"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 16:48:19] local.INFO: {"status":false,"description":"User not authenticated. Please use your valid token","status_code":401}  
+[2025-11-19 16:48:48] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/create","data":{"brand":"VISA","amount":"1","customer_id":"f385bbcd-0688-4e28-84b7-a4ee965070db","ref":"f5136344-ffff-44cb-ac84-674fba662843","type":"virtual"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 16:48:50] local.INFO: {"status":false,"description":"Customer not found for this business.","status_code":400}  
+
 "} 
-[2025-11-19 01:26:59] local.INFO: {"code":"000","content":{"transactions":{"status":"delivered","product_name":"Third Party Motor Insurance - Universal Insurance","unique_element":"ATU480ER","unit_price":"3000.00","quantity":1,"service_verification":null,"channel":"api","commission":30000,"total_amount":-27000,"discount":null,"type":"Insurance","email":"ukachukwuchioma29@gmail.com","phone":"09029009410","name":null,"convinience_fee":0,"amount":"3000.00","platform":"api","method":"api","transactionId":"17635120080730135011159135","commission_details":{"amount":30000,"rate":"1000.00","rate_type":"percent","computation_type":"default"}}},"response_description":"TRANSACTION SUCCESSFUL","requestId":"202511190126691d0ec66833c","amount":3000,"transaction_date":"2025-11-19T00:26:48.000000Z","purchased_code":"Download Certificate : https:\/\/3rdparty.universalinsuranceonline.com\/PrintCertificate.aspx?Data=UPMSB001310125D949061969202","certUrl":"https:\/\/3rdparty.universalinsuranceonline.com\/PrintCertificate.aspx?Data=UPMSB001310125D949061969202"}  
-[2025-11-19 01:27:10] local.INFO: {"code":"011","response_description":"INVALID ARGUMENTS","content":{"errors":["serviceID is empty"]}}  
-[2025-11-19 01:28:58] local.ERROR: syntax error, unexpected token ":", expecting "]" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \":\", expecting \"]\" at /Users/macintoshhd/Downloads/masterpay/Modules/BillPayment/Http/Controllers/VtpassController.php:55)
+[2025-11-19 16:50:52] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/customers\/create","data":{"first_name":"Rick","last_name":"Chibuike","phone":"2348109545946","email":"rickdeprogrammer@gmail.com","country":"NG"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 16:50:54] local.INFO: {"status":true,"description":"Customer created successfully.","message":{"details":{"customer_id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6","first_name":"Rick","last_name":"Chibuike","email":"rickdeprogrammer@gmail.com","phone":"2348109545946","country":"NG","tier":0,"created_at":"2025-11-19 15:50:55"}},"status_code":200}  
+[2025-11-19 16:50:54] local.INFO: array (
+  'status' => true,
+  'description' => 'Customer created successfully.',
+  'message' => 
+  array (
+    'details' => 
+    array (
+      'customer_id' => '6a1bef8d-87f6-4742-8a3b-0a276544dbc6',
+      'first_name' => 'Rick',
+      'last_name' => 'Chibuike',
+      'email' => 'rickdeprogrammer@gmail.com',
+      'phone' => '2348109545946',
+      'country' => 'NG',
+      'tier' => 0,
+      'created_at' => '2025-11-19 15:50:55',
+    ),
+  ),
+  'status_code' => 200,
+)  
+
+
+{
+    "status": true,
+    "description": "Customer created successfully.",
+    "message": {
+        "details": {
+            "customer_id": "6a1bef8d-87f6-4742-8a3b-0a276544dbc6",
+            "first_name": "Rick",
+            "last_name": "Chibuike",
+            "email": "rickdeprogrammer@gmail.com",
+            "phone": "2348109545946",
+            "country": "NG",
+            "tier": 0,
+            "created_at": "2025-11-19 15:50:55"
+        }
+    },
+    "status_code": 200
+}[2025-11-19 16:52:06] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/create","data":{"brand":"VISA","amount":"1","customer_id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6","ref":"3d95f221-a721-4e93-b092-6f95b3d3f224","type":"virtual"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 16:52:07] local.INFO: {"status":false,"description":"Customer not eligible to create card. Please complete all KYC for customer.","status_code":400}  
+
+
+
+{
+    "id": 19,
+    "payscribe_id": "f385bbcd-0688-4e28-84b7-a4ee965070db",
+    "tier": "0",
+    "firstname": "Rick",
+    "lastname": "Chibuike",
+    "account_number": "5300290144",
+    "account_balance": "108004.00",
+    "user_pin": "1122",
+    "verify_otp": 0,
+    "username": "engrrick",
+    "referral_id": null,
+    "refer_bonus": 0,
+    "language_id": 1,
+    "email": "rickdeprogrammer@gmail.com",
+    "country_code": "NG",
+    "country": "Nigeria",
+    "phone_code": "234",
+    "phone": "8109545946",
+    "image": null,
+    "image_driver": null,
+    "state": null,
+    "city": null,
+    "zip_code": null,
+    "address_one": null,
+    "address_two": null,
+    "provider": null,
+    "provider_id": null,
+    "status": 1,
+    "two_fa": 0,
+    "two_fa_verify": 1,
+    "two_fa_code": null,
+    "kyc": 0,
+    "email_verification": 1,
+    "sms_verification": 1,
+    "verify_code": null,
+    "sent_at": null,
+    "last_login": null,
+    "last_seen": null,
+    "time_zone": null,
+    "email_verified_at": null,
+    "created_at": "2025-11-06T03:29:02.000000Z",
+    "updated_at": "2025-11-18T03:47:31.000000Z",
+    "deleted_at": null,
+    "account_id": "0e6bdbd9-d6cc-4576-8298-3df0db0af856",
+    "bank_name": "9PSB",
+    "account_type": "static",
+    "bank_code": "120001",
+    "last-seen-activity": false
+}
+[2025-11-19 17:14:52] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/create","data":{"brand":"VISA","amount":"1","customer_id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6","ref":"22c79b99-7f57-4da9-937d-b328e13c769a","type":"virtual"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 17:14:53] local.INFO: {"status":false,"description":"Customer not eligible to create card. Please complete all KYC for customer.","status_code":400}  
+[2025-11-19 17:21:31] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/create","data":{"brand":"VISA","amount":"1","customer_id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64","type":"virtual"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 17:21:50] local.INFO: {"status":true,"description":"Card created successfully","message":{"details":{"trans_id":"bddb0c07-0dc8-4d11-8106-6f51dae4c35d","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64","card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","card_type":"virtual","currency":"USD","brand":"VISA","name":"Rick Chibuike","first_six":"431113","last_four":"5731","masked":"431113 **** **** 5731","number":"4311133784115731","expiry":"11/28","ccv":"619","billing":{"street":"619 Jannie Dam","city":"Krystinaside","state":"Oklahoma","country":"Georgia","postal_code":"14867-6779"},"created_at":"2025-11-19 16:21:50","updated_at":"2025-11-19 16:21:50"},"customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6","name":"Rick Chibuike"}}},"status_code":200}  
+[2025-11-19 17:28:23] local.ERROR: Too few arguments to function App\Http\Controllers\API\PayscribeCardDetailsController::GetvirtualCards(), 0 passed in /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Controller.php on line 54 and exactly 2 expected {"userId":19,"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Http\\Controllers\\API\\PayscribeCardDetailsController::GetvirtualCards(), 0 passed in /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Controller.php on line 54 and exactly 2 expected at /Users/macintoshhd/Downloads/masterpay/app/Http/Controllers/API/PayscribeCardDetailsController.php:31)
 [stacktrace]
-#0 /Users/macintoshhd/Downloads/masterpay/vendor/composer/ClassLoader.php(427): {closure:Composer\\Autoload\\ClassLoader::initializeIncludeClosure():575}('/Users/macintos...')
-#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Modules\\\\BillPay...')
-#2 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1117): is_a('Modules\\\\BillPay...', 'Illuminate\\\\Rout...', true)
-#3 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1054): Illuminate\\Routing\\Route->controllerMiddleware()
-#4 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(820): Illuminate\\Routing\\Route->gatherMiddleware()
-#5 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(802): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
-#6 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#7 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#8 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#9 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#10 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->{closure:Illuminate\\Foundation\\Http\\Kernel::dispatchToRouter():198}(Object(Illuminate\\Http\\Request))
-#11 /Users/macintoshhd/Downloads/masterpay/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
-#12 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#14 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#16 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#17 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#18 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#19 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#20 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#21 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#22 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#23 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#24 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#25 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#26 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#27 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
-#28 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#29 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#30 /Users/macintoshhd/Downloads/masterpay/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#31 {main}
+#0 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\API\\PayscribeCardDetailsController->GetvirtualCards()
+#1 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('GetvirtualCards', Array)
+#2 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\PayscribeCardDetailsController), 'GetvirtualCards')
+#3 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\Route->runController()
+#4 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
+#5 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(170): Illuminate\\Routing\\Router->{closure:Illuminate\\Routing\\Router::runRouteWithinStack():807}(Object(Illuminate\\Http\\Request))
+#6 /Users/macintoshhd/Downloads/masterpay/app/Http/Middleware/ValidateRequestData.php(26): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
+#7 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): App\\Http\\Middleware\\ValidateRequestData->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#9 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#11 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#15 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#16 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#17 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#19 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#20 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#21 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#22 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->{closure:Illuminate\\Foundation\\Http\\Kernel::dispatchToRouter():198}(Object(Illuminate\\Http\\Request))
+#23 /Users/macintoshhd/Downloads/masterpay/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->{closure:Illuminate\\Pipeline\\Pipeline::prepareDestination():168}(Object(Illuminate\\Http\\Request))
+#24 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#26 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#29 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#32 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#34 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#36 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#38 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():184}:185}(Object(Illuminate\\Http\\Request))
+#40 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#41 /Users/macintoshhd/Downloads/masterpay/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#42 /Users/macintoshhd/Downloads/masterpay/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#43 {main}
 "} 
+[2025-11-19 17:46:43] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/topup","data":{"amount":"2","ref":"8f51ec58-cf92-4b92-8c74-bc6c7eb1b019"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 17:46:45] local.INFO: {"status":true,"description":"Card topup successfully.","message":{"details":{"trans_id":"7878a5f2-b93c-4813-8501-12d5976b232b","ref":"8f51ec58-cf92-4b92-8c74-bc6c7eb1b019","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","brand":"VISA","prev_balance":1,"balance":3},"currency":"USD","prev_balance":49998,"balance":49996,"ref_id":"8f51ec58-cf92-4b92-8c74-bc6c7eb1b019","action":"topup","created_at":"2025-11-19 16:46:45","event_id":"7878a5f2-b93c-4813-8501-12d5976b232b","event_type":"cards.adjusted.topup"}},"status_code":200}  
+[2025-11-19 17:47:14] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/topup","data":{"amount":"0.1","ref":"2d16fb71-5014-4f31-99dc-055f87e8a2b9"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 17:47:15] local.INFO: {"status":true,"description":"Card topup successfully.","message":{"details":{"trans_id":"d40f6254-2555-429e-84fd-86f51304eedd","ref":"2d16fb71-5014-4f31-99dc-055f87e8a2b9","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","brand":"VISA","prev_balance":3,"balance":3.100000000000000088817841970012523233890533447265625},"currency":"USD","prev_balance":49996,"balance":49995.9000000000014551915228366851806640625,"ref_id":"2d16fb71-5014-4f31-99dc-055f87e8a2b9","action":"topup","created_at":"2025-11-19 16:47:16","event_id":"d40f6254-2555-429e-84fd-86f51304eedd","event_type":"cards.adjusted.topup"}},"status_code":200}  
+[2025-11-19 17:48:08] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/withdraw","data":{"amount":"2","ref":"02d7fe8f-19ad-4522-8a42-8fa9e33de255"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 17:48:10] local.INFO: {"status":true,"description":"Card withdraw successfully.","message":{"details":{"trans_id":"f1dedec4-f87a-4bb2-8d3f-24e62b754b8d","ref":"02d7fe8f-19ad-4522-8a42-8fa9e33de255","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","brand":"VISA","prev_balance":3.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"USD","prev_balance":0,"balance":2,"ref_id":"02d7fe8f-19ad-4522-8a42-8fa9e33de255","action":"withdraw","created_at":"2025-11-19 16:48:10","event_id":"f1dedec4-f87a-4bb2-8d3f-24e62b754b8d","event_type":"cards.adjusted.withdraw"}},"status_code":200}  
+[2025-11-19 17:53:24] local.INFO: /cards/transaction/812e7461-9079-4b00-b1d8-15f7c6af8a77/transactions?start_date=2025-11-19&end_date=2025-11-19&page_size=20&page=1  
+[2025-11-19 17:54:24] local.INFO: /cards/transaction/812e7461-9079-4b00-b1d8-15f7c6af8a77/transactions?start_date=2025-11-19&end_date=2025-11-19&page_size=20&page=1  
+[2025-11-19 18:29:43] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/freeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 18:29:47] local.INFO: {"status":false,"description":"Please pass in your transaction ref","status_code":400}  
+[2025-11-19 18:30:18] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/freeze","data":{"ref":"812e7461-9079-4b00-b1d8-15f7c6af8a77"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 18:30:20] local.INFO: {"status":true,"description":"Card action - freeze successfully.","message":{"details":{"trans_id":"37fb6253-7546-4816-8092-551045c336f8","ref":"812e7461-9079-4b00-b1d8-15f7c6af8a77","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"freeze","created_at":"2025-11-19 17:30:20","event_id":"37fb6253-7546-4816-8092-551045c336f8","event_type":"cards.adjusted.freeze"}},"status_code":200}  
+[2025-11-19 18:32:56] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/unfreeze","data":{"ref":"812e7461-9079-4b00-b1d8-15f7c6af8a77"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 18:32:58] local.INFO: {"status":true,"description":"Card action - unfreeze successfully.","message":{"details":{"trans_id":"a7dc2867-78f0-47f8-9111-4778555147e4","ref":"812e7461-9079-4b00-b1d8-15f7c6af8a77","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"unfreeze","created_at":"2025-11-19 17:32:59","event_id":"a7dc2867-78f0-47f8-9111-4778555147e4","event_type":"cards.adjusted.unfreeze"}},"status_code":200}  
+[2025-11-19 18:33:24] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/unfreeze","data":{"ref":"812e7461-9079-4b00-b1d8-15f7c6af8a77"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 18:33:25] local.INFO: {"status":true,"description":"Card action - unfreeze successfully.","message":{"details":{"trans_id":"584eae4b-067f-4df2-ad2e-887fdf40f7b2","ref":"812e7461-9079-4b00-b1d8-15f7c6af8a77","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"unfreeze","created_at":"2025-11-19 17:33:26","event_id":"584eae4b-067f-4df2-ad2e-887fdf40f7b2","event_type":"cards.adjusted.unfreeze"}},"status_code":200}  
+[2025-11-19 18:43:23] local.INFO: array (
+  'serviceID' => 'mtn-data',
+  'phone' => '08011111111',
+  'amount' => '200',
+  'variation_code' => 'mtn-50mb-200',
+  'request_id' => '202511191843691e01bb5c9cd',
+)  
+[2025-11-19 18:43:47] local.INFO: array (
+  'serviceID' => 'mtn-data',
+  'phone' => '08011111177',
+  'amount' => '200',
+  'variation_code' => 'mtn-50mb-200',
+  'request_id' => '202511191843691e01d37c715',
+)  
+[2025-11-19 18:56:35] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/freeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 18:56:37] local.INFO: {"status":false,"description":"Please pass in your transaction ref","status_code":400}  
+[2025-11-19 18:57:37] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\\\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/freeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 18:57:38] local.INFO: ""  
+[2025-11-19 18:58:05] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/freeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 18:58:06] local.INFO: {"status":false,"description":"Please pass in your transaction ref","status_code":400}  
+[2025-11-19 19:01:33] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/freeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","ref":"02d7fe8f-19ad-4522-8a42-8fa9e33de255"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 19:01:34] local.INFO: {"status":true,"description":"Card action - freeze successfully.","message":{"details":{"trans_id":"5284633c-4688-40e2-b4eb-d3936b90ce17","ref":"02d7fe8f-19ad-4522-8a42-8fa9e33de255","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"freeze","created_at":"2025-11-19 18:01:34","event_id":"5284633c-4688-40e2-b4eb-d3936b90ce17","event_type":"cards.adjusted.freeze"}},"status_code":200}  
+[2025-11-19 19:04:08] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64\/unfreeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 19:04:10] local.INFO: {"status":true,"description":"Card action - unfreeze successfully.","message":{"details":{"trans_id":"fca6c91b-1787-4610-9a7c-1f1332225eb6","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"unfreeze","created_at":"2025-11-19 18:04:10","event_id":"fca6c91b-1787-4610-9a7c-1f1332225eb6","event_type":"cards.adjusted.unfreeze"}},"status_code":200}  
+[2025-11-19 19:04:57] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/812e7461-9079-4b00-b1d8-15f7c6af8a77\/freeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 19:04:59] local.INFO: {"status":true,"description":"Card action - freeze successfully.","message":{"details":{"trans_id":"b2a6948f-87fd-489a-8564-866f9c366d57","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"freeze","created_at":"2025-11-19 18:04:59","event_id":"b2a6948f-87fd-489a-8564-866f9c366d57","event_type":"cards.adjusted.freeze"}},"status_code":200}  
+[2025-11-19 19:05:08] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64\/unfreeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 19:05:09] local.INFO: {"status":true,"description":"Card action - unfreeze successfully.","message":{"details":{"trans_id":"74de39af-79bd-459b-9f31-64a80f61645c","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"unfreeze","created_at":"2025-11-19 18:05:09","event_id":"74de39af-79bd-459b-9f31-64a80f61645c","event_type":"cards.adjusted.unfreeze"}},"status_code":200}  
+[2025-11-19 19:05:15] local.INFO: {"url":"https:\/\/sandbox.payscribe.ng\/api\/v1\/cards\/d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64\/unfreeze","data":{"card_id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64"},"Api key":"ps_pk_test_5j7RtcWh26X9U8AvxYs38wkE4tgN3S"}  
+[2025-11-19 19:05:16] local.INFO: {"status":true,"description":"Card action - unfreeze successfully.","message":{"details":{"trans_id":"b5f22f80-652d-41af-9315-58365e860c17","ref":"d42ee473-fcd6-4ee3-8894-8d2d0c0f2f64","customer":{"id":"6a1bef8d-87f6-4742-8a3b-0a276544dbc6"},"card":{"id":"812e7461-9079-4b00-b1d8-15f7c6af8a77","first_six":"431113","last_four":"5731","prev_balance":1.100000000000000088817841970012523233890533447265625,"balance":1.100000000000000088817841970012523233890533447265625},"currency":"usd","action":"unfreeze","created_at":"2025-11-19 18:05:16","event_id":"b5f22f80-652d-41af-9315-58365e860c17","event_type":"cards.adjusted.unfreeze"}},"status_code":200}  

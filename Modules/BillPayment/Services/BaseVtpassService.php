@@ -27,7 +27,7 @@ class BaseVtpassService
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
         curl_close($ch);
-        \Log::info($response);
+        // \Log::info($response);
 
         return json_decode($response, true);
     }
@@ -40,13 +40,14 @@ class BaseVtpassService
             'secret-key: ' . $this->secretKey,
             'Content-Type: application/json'
         ]);
+        \Log::info($data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
         $response = curl_exec($ch);
+        // \Log::info($response);
         curl_close($ch);
-        \Log::info($response);
 
         return json_decode($response, true);
     }
@@ -91,4 +92,11 @@ class BaseVtpassService
     {
         return \Carbon\Carbon::now('Africa/Lagos')->format('YmdHi') . uniqid();
     }
+
+    public function verifyMeterNumber($payload)
+{
+    $payload['request_id'] = $this->generateRequestId();
+    return $this->post('merchant-verify', $payload);
+}
+
 }

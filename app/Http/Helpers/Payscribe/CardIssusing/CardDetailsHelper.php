@@ -10,7 +10,7 @@ class CardDetailsHelper extends ConnectionHelper {
     }
 
     public function getCardDetails($data){
-        $url = "/cards/{$data['ref']}";
+        $url = "/cards/{$data['card_id']}";
         
         return $this->get($url);
 

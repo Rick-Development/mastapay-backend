@@ -11,7 +11,9 @@ Route::group(['middleware' => ['auth:sanctum','CheckVerificationApi']], function
             Route::get('/services/{identifier}', [VtpassController::class, 'services']);
             Route::get('/services/{serviceId}/variations', [VtpassController::class, 'variations']);
             Route::get('/services/{serviceId}/options/{optionName}', [VtpassController::class, 'options']);
+            Route::post('/verify-meter', [VtpassController::class, 'verifyMeter']);
             Route::post('/purchase', [VtpassController::class, 'purchase']);
+            
             Route::post('/requery', [VtpassController::class, 'requery']);
             Route::get('/balance', [VtpassController::class, 'balance']);
         });
