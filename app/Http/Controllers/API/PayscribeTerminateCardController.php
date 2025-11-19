@@ -19,7 +19,6 @@ class PayscribeTerminateCardController extends Controller
         );
 
 
-    // Get last card transaction for this card & user
     $card = PayscribeVirtualCardDetails::where('user_id', auth()->id())
             ->where('card_id', $data['card_id'])
             ->first(); 
